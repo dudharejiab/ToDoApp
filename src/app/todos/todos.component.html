@@ -7,7 +7,7 @@
 </div>
 <div *ngIf="appState == 'edit'">
   <h2>Edit Todo</h2>
-  <form (submit)='UpdateTodo(todoText)'>
+  <form (submit)='updateTodo(todoText)'>
     <input type="text" [(ngModel)]="text" [ngModelOptions]="{standalone: true}" />
     <!-- <button id='add' > Add </button> -->
   </form>
